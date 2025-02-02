@@ -1,39 +1,37 @@
-# AlarmBot
-# Опис проекту
+### AlarmBot  
+## Project Description  
 
-Цей проект представляє собою Telegram-бота для моніторингу повітряних тривог в Україні. Бот дозволяє користувачам обирати область для сповіщень та отримувати інформацію про активні тривоги у відповідному регіоні. Дані отримуються через API та оновлюються в реальному часі.
+This project is a Telegram bot for monitoring air raid alerts in Ukraine. The bot allows users to select a region for notifications and receive information about active alerts in the specified area. The data is fetched via an API and updated in real time.  
 
-## Функціонал
-- Запит поточного статусу повітряної тривоги для вибраної області.
-- Автоматичні сповіщення у разі зміни статусу тривоги.
-- Використання багатопотокового моніторингу для кожного користувача.
-- Запуск Flask-сервера для хостингу бота.
+## Features  
+- Request the current air raid alert status for the selected region.  
+- Automatic notifications when the alert status changes.  
+- Multi-threaded monitoring for each user.  
+- Running a Flask server to host the bot.  
 
-## Використані технології
-- Python 3
-- Flask
-- Telegram Bot API
-- requests (для отримання даних з API)
-- pytz (для коригування часового поясу)
+## Technologies Used  
+- Python 3  
+- Flask  
+- Telegram Bot API  
+- `requests` (for fetching data from the API)  
+- `pytz` (for time zone adjustment)  
 
-## Запуск проекту
-1. Встановіть необхідні залежності:
+## Project Setup  
+1. Install the required dependencies:  
    ```sh
    pip install -r requirements.txt
-   ```
-2. Запустіть бота:
+   ```  
+2. Run the bot:  
    ```sh
    python bot.py
-   ```
+   ```  
 
-## ВАЖЛИВО
-API-токен для отримання даних про тривоги надсилається на пошту, тому його **не можна публікувати** або передавати третім особам. Це необхідно для безпеки та запобігання несанкціонованому доступу.
+## IMPORTANT  
+The API token for retrieving alert data is sent via email and **must not be published** or shared with third parties. This is necessary for security and to prevent unauthorized access.  
 
-## Приклади роботи бота
-- Приклад працювання боту у іншої людини: [Скріншот](https://ibb.co/zVyXJNh4)
-- Приклад працювання боту в мене: [Скріншот](https://ibb.co/gL625BX2)
+## Bot Usage Examples  
+- Example of the bot working for another user: [Screenshot](https://ibb.co/zVyXJNh4)  
+- Example of the bot working for me: [Screenshot](https://ibb.co/gL625BX2)  
 
-## Автор
-Розробник: [Глушко Анна]
-
-
+## Author  
+Developer: [Глушко Анна]
