@@ -116,9 +116,9 @@ def start_monitoring(message):
 
 
 if __name__ == "__main__":
-    # Запускаємо bot.polling у фоновому потоці
+    
     threading.Thread(target=lambda: bot.polling(non_stop=True), daemon=True).start()
 
-    # Запуск Flask-сервера на вказаному порту
+    
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
